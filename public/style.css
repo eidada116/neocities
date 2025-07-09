@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'EriAn';
+    src: url('/public/fonts/erian.ttf');
+}
+
+@font-face {
+    font-family: 'basiic';
+    src: url('/public/fonts/basiic.ttf');
+}
+
+body{
+    background-image: url('/public/images/image2.jpg');
+    background-repeat: repeat;
+}
+
+h1, h2{
+    font-family: 'EriAn';
+}
+
+
+#papernav{
+    z-index: -1;
+    width:300px;
+    display:block;
+}
+
+#nav_links{
+    top:5px;
+    left:30px;
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    font-family: 'basiic';
+}
+
+#nav_window{
+    position:relative;
+    width:300px;
+    top:20px;
+    margin-left:20px;
+}
+
+.nav_link{
+    text-decoration: none;
+    color:brown;
+    padding: 5px 5px 5px 5px;
+    display: inline-block; 
+    transition: transform 0.3s ease, color 0.3s ease, padding 0.3s ease;
+}
+
+.nav_link:hover{
+    transform: rotate(10deg);
+    color:rgb(223, 92, 114);
+    padding:15px 0 15px 0;
+}
